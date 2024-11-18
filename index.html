@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/qrcode.png" type="image/x-icon">
+    <title>Gerador de código QR</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Gerador de Código QR</h1>
+        </header>
+        <div class="searchBox">
+            <label for="link">Colar Link:</label>
+            <div class="search">
+                <input type="text" name="link" id="link"  autofocus>
+                <button>Gerar QR</button>
+            </div>
+        </div>
+        <div id="codigo">
+            <img id="qrcode" src="" >
+            
+            <div class="place">
+                <img id="seta" src="icons/arrow-right-line.png" >
+                <h3>QRCODE</h3>
+            </div>
+        </div>
+        <a id="download" style="display: none;">Download QR Code</a>
+        
+    </main>
+    <aside class="info">
+        <div class="alert">
+            <p>Área de texto vazio. <br> Digite um link para converter.</p>
+            <button class="alertOK">OK</button>
+        </div>
+    </aside>
+    <aside>
+        <div class="container">
+            <div class="part1">
+                <ul>
+                    <li><a href="questao1.html">O que é QRCode ?</a></li>
+                    <li><a href="questao2.html">O que é Link ?</a></li>
+                    <li><a href="questao3.html">Sobre o Programador</a></li>
+                </ul>
+                
+            </div>
+            <div class="part2">
+                <div id="pub">
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+
+    <script src="gerar.js"></script>
+</body>
+</html>

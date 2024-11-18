@@ -1,0 +1,228 @@
+@font-face{
+    font-family: "BlackOpsOne";
+    src: url(../fonts/BlackOpsOne-Regular.ttf);;
+}
+@font-face{
+    font-family: "Outfit";
+    src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #282a3a;
+    border-radius: 10px;
+    background-color: white;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #282a3a;
+    border-radius: 10px;
+}
+body{
+    font-family: Outfit ;
+    background-color:#e8ffff ;
+    overflow-x: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 30px;
+}
+header{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: BlackOpsOne;
+    color: #3b437e;
+
+}
+.searchBox{
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    margin-bottom: 30px;
+
+}
+.search{
+    border-radius: 8px;
+    border: 1px solid #c4dada;
+    margin-left: 3px;
+    
+}
+label{
+    font-weight: normal;
+    color: #28518f;
+}
+input{
+    height: 30px;
+    width: 210px;
+    outline: none;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    padding-left: 3px;
+    font-size: 0.9em;
+
+}
+button{
+    height: 30px;
+    width: 70px;
+    outline: none;
+    border-radius: 0px 8px 8px  0px;
+    border: none;
+    font-family: Outfit;
+    font-size: normal;
+    font-weight: 600;
+    color: #28518f;
+    background-color: rgb(177, 175, 175);
+}
+button:hover{
+    font-size: 14px;
+    cursor: pointer;
+}
+#codigo{
+    width: 350px;
+    height: 220px;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px 0px #0000000f;
+    margin-bottom: 10px;
+    
+}
+.place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    animation: pisca 1.2s linear infinite;
+    
+}
+@keyframes pisca {
+    from{
+        opacity: 0;
+    }
+}
+#codigo h3{
+    font-size: .9em;
+}
+#codigo #seta{
+    width: 30px;
+    height: 30px;
+    transform: rotate(-90deg);
+}
+aside{
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    animation: slide .5s linear;
+}
+@keyframes slide{
+    from{
+        transform:translateY(200px);
+    }
+}
+@media (max-width: 700px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    header{
+        font-size: 1em;
+    }
+}
+.container div{
+    height: 215px;
+    background-color: #282a3a;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #282a3a;
+    
+}
+.part1 ul{
+    list-style-position: inside ;
+    list-style-type:  georgian;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.part1 a{
+    text-decoration: none;
+    font-size: .8em;
+    color: #28518f;
+}
+.part1 a:hover{
+    color: #3b437e;
+}
+.part2{
+    display: flex;
+    
+}
+#pub{
+    width: 100%;
+    background-image: url(./img/pubb1.png);
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    animation: slide2 .8s ease-in-out .5s  forwards;
+}
+@keyframes slide2{
+    0%{
+        transform:translateX(900px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0px);
+    }
+
+}
+.info{
+    display: none;
+}
+.alert{
+    position: absolute;
+    top: 49%;
+    left: 48%;
+    transform: translate(-100px,-100px);
+    background-color: #282a3add;
+    border: 3px solid rgb(221, 29, 29);
+    border-radius: 10px;
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.alert p{
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+.alertOK{
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    color: #282a3a;
+    background-color: rgb(18, 218, 18);
+}

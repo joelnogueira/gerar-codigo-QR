@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é QRCode?</title>
+    <style>
+        @font-face{
+            font-family: "Outfit";
+            src: url(../fonts/Outfit-VariableFont_wght.ttf);
+        }
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #282a3a;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #282a3a;
+            border-radius: 10px;
+        }
+        body{
+            background-color:#282a3a;
+            font-family: Outfit;
+        }
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            
+        }
+        fieldset{
+            width: 400px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            border-color: white;
+        }
+        legend{
+            color: white;
+            font-weight: bold;
+            padding: 0px 5px 0px 5px;
+            
+        }
+        .respostas{
+            border: 1px solid #28518f;
+            width: 395px;
+            height: 470px;
+            margin-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            background-image: linear-gradient(to right, #282a3a, #28518f);
+            overflow-y: scroll;
+            
+        }
+        .respostas div{
+            animation: fundo 1.2s linear;
+        }
+        @keyframes fundo {
+            from{
+                opacity: 0;
+            }
+        }
+        .respostas h3{
+            font-size: 1em;
+            color: #28518f;
+        }
+        .respostas p{
+            font-size: .9em;
+            margin-bottom: 50px;
+        }
+        #Regressar{
+            display: flex;
+            justify-content: end;
+        }
+        #Regressar button{
+            border: 1px solid white;
+            outline: none;
+            font-family: Outfit;
+            font-size: normal;
+            font-weight: 600;
+            color: #28518f;
+            background-color: white;
+        }
+        #Regressar button:hover{
+            background-color: #282a3a;
+        }
+        .btn{
+            display: flex;
+            justify-content: end;
+            margin-top: 10px;
+            padding: 0px 5px 0px 5px;
+        }
+        .proximo{
+            border: 1px solid white;
+            outline: none;
+            font-family: Outfit;
+            font-size: .8em;
+            font-weight: normal;
+            color: #28518f;
+            background-color: white;
+        }
+        .proximo:hover{
+            background-color: #282a3a;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="Regressar"><button onclick="javascript:window.location.href='index.html'">Regressar</button></div>
+        <fieldset>
+            <legend>O que é QRcode?</legend>
+            <div class="respostas">
+                <div>
+                    <h3> QRcode:</h3>
+                    <p>Um código QR (Quick Response) é um tipo de código de barras bidimensional que pode ser lido por dispositivos com câmeras, como smartphones e tablets. Foi inventado no Japão em 1994 pela empresa Denso Wave para rastrear peças na fabricação de automóveis.
+                        <br><br>
+                    <strong>Estrutura:</strong>  Um código QR é composto por uma matriz de pontos pretos e brancos, organizados em um quadrado. Esses pontos codificam informações que podem ser lidas por um leitor de QR.
+                    <br><br>
+                    <strong>Capacidade de Dados:</strong>   Pode armazenar uma variedade de dados, como URLs, texto, informações de contato, eventos de calendário, entre outros. A quantidade de dados que pode armazenar depende da versão do código QR (existem 40 versões, variando em tamanho e capacidade).
+                    </p>
+                </div>
+                <div>
+                    <h3> Para quê serve:</h3>
+                    <p><strong>Facilidade de Acesso:</strong>   Permite acesso rápido a informações ou links sem a necessidade de digitar manualmente. Por exemplo, você pode apontar a câmera do seu smartphone para um código QR em um cartaz e ser direcionado diretamente a um site.
+                    <br> <br>
+                    <strong>Versatilidade:</strong>   Pode ser usado para uma ampla gama de aplicações, desde marketing e publicidade até bilhetes de eventos e pagamentos.
+                    <br> <br>
+                    <strong>Rastreamento e Gestão de Informação: </strong>  Em ambientes industriais e de logística, códigos QR são usados para rastrear produtos e peças.</p>
+                </div>
+                <div>
+                    <h3> Onde usar:</h3>
+                    <p><strong>Marketing e Publicidade:</strong> Em folhetos, cartazes, anúncios de revistas, cartões de visita, etc., para direcionar clientes a sites, vídeos promocionais ou perfis de redes sociais.
+                    <br><br>
+                    <strong>Eventos:</strong> Bilhetes para shows, conferências ou eventos esportivos muitas vezes usam códigos QR para entrada.
+                    <br><br>
+                    <strong>Restaurantes:</strong> Menus digitais podem ser acessados escaneando um código QR colocado nas mesas.
+                    <br><br>
+                    <strong>Pagamentos:</strong> Sistemas de pagamento móvel (como o Alipay ou o WeChat Pay) usam códigos QR para facilitar transações.
+                    <br><br>
+                    <strong>Transporte Público:</strong> Bilhetes de trem, ônibus ou avião frequentemente usam códigos QR para verificação.
+                    <br><br>
+                    <strong>Educação:</strong> Livros e materiais educativos podem incluir códigos QR que direcionam a recursos online ou materiais complementares.</p>
+                </div>
+                <div>
+                    <h3> Como ler um código QR:</h3>
+                    <p>Para ler um código QR, você precisa de um dispositivo com uma câmera e um aplicativo leitor de QR. A maioria dos smartphones modernos já vem com essa funcionalidade integrada na câmera. Basta abrir o aplicativo da câmera, apontar para o código QR e seguir as instruções na tela para acessar o conteúdo codificado.
+                    <br><br>
+                    Os códigos QR oferecem uma maneira conveniente e eficiente de compartilhar e acessar informações, sendo uma ferramenta amplamente adotada em diversas indústrias e aplicações.</p>
+                </div>
+                <div>
+                    <h3> Como criar um neste app:</h3>
+                    <p>Para criar um QRcode neste app, basta colar o link que pretendes converter para código QR na area de texto, e em seguida clicar no botão <strong>"Gerar QR"</strong>.</p>
+                </div>
+                
+            </div>
+            <div class="btn">
+                <div class="proximo" onclick="javascript:window.location.href='questao2.html'">Próximo</div>
+            </div>
+        </fieldset>
+    </main>
+</body>
+</html>
